@@ -4,6 +4,7 @@ NEXATHON_PPT.pptx
 *.pptx
 docs/
 *.md
+!/README.md
 
 # Dependencies
 node_modules/
