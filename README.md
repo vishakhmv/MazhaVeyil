@@ -82,8 +82,34 @@ The following high-impact features were engineered beyond the basic `.md` specif
   * **Tabular monospace numerals (`tabular-nums`)** so figures stay stable on screen.
   * Live telemetry badges: **KSEB 11kV Grid Status (Normal · Peak Shaving Active)** and **PM Surya Ghar ₹78,000 Window (158 Days Left)**.
 
+
 ### 10. Universal Print Sheet Routing & Proxy
 * **What Was Added:** Smart fallback routing across ports `3001` and `5173` that handles `/`, `/print`, `/print/:id`, and `/print/ward/:id` with zero `Cannot GET` errors.
+
+### 11. Rooftop AI Photo Upload & Solar Estimator
+* **What Was Added:** A dedicated **Rooftop AI** tab where a household can photograph their roof and get an instant AI-powered assessment:
+  * Drag-and-drop or click-to-upload roof image (JPG, PNG, WebP).
+  * Detects **usable roof area (m²)**, obstructions (water tanks, AC units), and **shadow risk** with confidence score.
+  * Selectable roof types: Flat RCC, Sloped Mangalore Tile, Sloped Metal Sheet, Thatched/Asbestos — each with real-world panel efficiency factors.
+  * Calculates **system size (kW), panel count, monthly generation (kWh), monthly savings (₹), payback period (years), and CO₂ avoided (kg/year)**.
+  * Warns if solar adoption brings the household **below the 250-unit KSEB tariff cliff** for maximum savings.
+  * Photo is processed in-memory — **never stored on server** (privacy-first design).
+  * Ends with a **"Pledge My Rooftop"** CTA that feeds directly into the Koottam campaign.
+
+### 12. Live Ward Heatmap Toggle
+* **What Was Added:** A **🔥 Heatmap ON/OFF toggle button** on the Leaflet Spatial Map:
+  * When ON, overlays a `leaflet.heat` density layer showing pledge concentration across wards.
+  * Colour gradient: blue (low density) → amber → red (high density) with a visible legend.
+  * Ward circles stay clickable beneath the heatmap for detailed inspection.
+  * Allows Panchayat planners to instantly identify which geographic areas have the highest demand without reading a table.
+
+### 13. Neighbourhood Challenge — Live Ward vs Ward Competition
+* **What Was Added:** A **Neighbourhood Challenge** tab that turns pledge collection into a live competitive leaderboard:
+  * Wards ranked by pledge count with **🥇🥈🥉 medals** for top 3.
+  * Per-ward progress bars showing percentage to the target threshold.
+  * **Competitive motivational line** for the selected ward: *"12 more pledges to overtake Ward 3 — don't let them win!"*
+  * **Live flash animation** (green ⚡) when a new WebSocket pledge event arrives for any ward.
+  * Aggregate footer showing **total pledges, total target, and combined kW potential** across all wards.
 
 ---
 
