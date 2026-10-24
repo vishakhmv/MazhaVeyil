@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Sun, CloudRain, Shield, Wifi, Printer, Send, Layers, 
-  RefreshCw, Camera, Leaf, Clock, Award, Activity, CheckCircle2 
+  RefreshCw, Camera, Leaf, Clock, Award, Activity, CheckCircle2, Home, Trophy
 } from 'lucide-react';
 import { fetchAtlasSummary } from './lib/api';
 import { ResilientLiveHub } from './lib/socket';
@@ -15,6 +15,8 @@ import { PrivacyCard } from './components/PrivacyCard';
 import { RainKoottamTab } from './components/RainKoottamTab';
 import { BillScannerTab } from './components/BillScannerTab';
 import { SustainabilityTab } from './components/SustainabilityTab';
+import { RooftopUploadTab } from './components/RooftopUploadTab';
+import { NeighbourhoodChallenge } from './components/NeighbourhoodChallenge';
 import { SvgWardMap } from './fallback/SvgWardMap';
 import { TableView } from './fallback/TableView';
 import { OfflineCard } from './fallback/OfflineCard';
@@ -24,7 +26,7 @@ export function App() {
   const [selectedWard, setSelectedWard] = useState(null);
   const [adoptionPct, setAdoptionPct] = useState(25); // 25% pilot benchmark
   const [events, setEvents] = useState([]);
-  const [rightTab, setRightTab] = useState('solar'); // 'solar' | 'rain' | 'bill' | 'sustainability'
+  const [rightTab, setRightTab] = useState('solar'); // 'solar' | 'rain' | 'bill' | 'sustainability' | 'rooftop' | 'challenge'
   const [connectionStatus, setConnectionStatus] = useState('connecting');
   const [resilientLevel, setResilientLevel] = useState(1); // 1: Map, 2: SVG, 3: Table, 4: Offline
   const [latestPledgeWardId, setLatestPledgeWardId] = useState(null);
@@ -302,20 +304,22 @@ export function App() {
           {/* Right Column: Tabbed Civic Modules */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
 
-            {/* Tab Selector Bar */}
-            <div className="glass-panel" style={{ padding: '5px', display: 'flex', gap: '4px' }}>
+            {/* Tab Selector Bar — Row 1 */}
+            <div className="glass-panel" style={{ padding: '5px', display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
               {[
                 { id: 'solar', icon: <Sun size={13}/>, label: 'Solar Koottam' },
                 { id: 'rain',  icon: <CloudRain size={13}/>, label: 'Rain Koottam' },
                 { id: 'bill',  icon: <Camera size={13}/>, label: 'Bill Scanner' },
-                { id: 'sustainability', icon: <Leaf size={13}/>, label: 'SDG Impact' }
+                { id: 'sustainability', icon: <Leaf size={13}/>, label: 'SDG Impact' },
+                { id: 'rooftop', icon: <Home size={13}/>, label: 'Rooftop AI' },
+                { id: 'challenge', icon: <Trophy size={13}/>, label: 'Challenge' },
               ].map(tab => (
                 <button
                   key={tab.id}
                   id={`tab-${tab.id}`}
                   className={`btn-secondary ${rightTab === tab.id ? 'active' : ''}`}
                   onClick={() => setRightTab(tab.id)}
-                  style={{ flex: 1, justifyContent: 'center', fontSize: '11px', padding: '6px 4px' }}
+                  style={{ flex: '1 1 auto', minWidth: '80px', justifyContent: 'center', fontSize: '10px', padding: '6px 4px' }}
                 >
                   {tab.icon} {tab.label}
                 </button>
@@ -362,6 +366,26 @@ export function App() {
               <SustainabilityTab
                 ward={selectedWard}
                 adoptionPct={adoptionPct}
+              />
+            )}
+
+            {/* Tab 5: Rooftop AI Upload */}
+            {rightTab === 'rooftop' && (
+              <RooftopUploadTab
+                ward={selectedWard}
+                onPledge={(solar) => {
+                  setRightTab('solar');
+                }}
+              />
+            )}
+
+            {/* Tab 6: Neighbourhood Challenge */}
+            {rightTab === 'challenge' && (
+              <NeighbourhoodChallenge
+                wards={wards}
+                selectedWard={selectedWard}
+                onSelectWard={setSelectedWard}
+                events={events}
               />
             )}
 
