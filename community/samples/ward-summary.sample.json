@@ -1,0 +1,17 @@
+{
+  "ward_id": "KLM-W07",
+  "name": "Ward 7",
+  "panchayat": "Example Panchayat",
+  "district": "Kollam",
+  "centroid": { "lat": 8.95, "lng": 76.62 },
+  "homes_estimated": 500,
+  "roofs_mapped": 312,
+  "potential_kw": 780.0,
+  "avg_roof_score": 68,
+  "pledged_homes": 63,
+  "firm_homes": 41,
+  "target_homes": 100,
+  "campaign_status": "open",
+  "data_quality": "survey+modelled",
+  "updated_at": "2026-10-24T10:00:00+05:30"
+}

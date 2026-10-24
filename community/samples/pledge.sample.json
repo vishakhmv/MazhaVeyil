@@ -1,0 +1,8 @@
+{
+  "ward_id": "KLM-W07",
+  "roof_id": "osm:way/123456789",
+  "kind": "solar",
+  "strength": "firm",
+  "est_kw": 2.5,
+  "contact_consent": false
+}
