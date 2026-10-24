@@ -1,0 +1,2481 @@
+{
+  "schema": "bill-result@1",
+  "rules_checked_on": "2026-10-24",
+  "tariff_id": "kseb-lt1a-2025",
+  "tariff_stale": false,
+  "bill": {
+    "units": 262,
+    "period_months": 1,
+    "monthly_units": 262,
+    "phase": "1ph",
+    "energy": 1768.5,
+    "fixed": 220,
+    "total": 1988.5,
+    "rate": 6.75
+  },
+  "cliff": {
+    "last": {
+      "at": 250,
+      "over_by": 12,
+      "saving_if_under": 336
+    },
+    "next": {
+      "at": 300,
+      "units_to_go": 38,
+      "jump": 262.6
+    }
+  },
+  "cliffs": [
+    {
+      "at": 250,
+      "jump": 261.75
+    },
+    {
+      "at": 300,
+      "jump": 262.6
+    },
+    {
+      "at": 350,
+      "jump": 130.45
+    },
+    {
+      "at": 400,
+      "jump": 128.25
+    },
+    {
+      "at": 500,
+      "jump": 484.2
+    }
+  ],
+  "curve": [
+    {
+      "units": 0,
+      "energy": 0
+    },
+    {
+      "units": 1,
+      "energy": 3.35
+    },
+    {
+      "units": 2,
+      "energy": 6.7
+    },
+    {
+      "units": 3,
+      "energy": 10.05
+    },
+    {
+      "units": 4,
+      "energy": 13.4
+    },
+    {
+      "units": 5,
+      "energy": 16.75
+    },
+    {
+      "units": 6,
+      "energy": 20.1
+    },
+    {
+      "units": 7,
+      "energy": 23.45
+    },
+    {
+      "units": 8,
+      "energy": 26.8
+    },
+    {
+      "units": 9,
+      "energy": 30.15
+    },
+    {
+      "units": 10,
+      "energy": 33.5
+    },
+    {
+      "units": 11,
+      "energy": 36.85
+    },
+    {
+      "units": 12,
+      "energy": 40.2
+    },
+    {
+      "units": 13,
+      "energy": 43.55
+    },
+    {
+      "units": 14,
+      "energy": 46.9
+    },
+    {
+      "units": 15,
+      "energy": 50.25
+    },
+    {
+      "units": 16,
+      "energy": 53.6
+    },
+    {
+      "units": 17,
+      "energy": 56.95
+    },
+    {
+      "units": 18,
+      "energy": 60.3
+    },
+    {
+      "units": 19,
+      "energy": 63.65
+    },
+    {
+      "units": 20,
+      "energy": 67
+    },
+    {
+      "units": 21,
+      "energy": 70.35
+    },
+    {
+      "units": 22,
+      "energy": 73.7
+    },
+    {
+      "units": 23,
+      "energy": 77.05
+    },
+    {
+      "units": 24,
+      "energy": 80.4
+    },
+    {
+      "units": 25,
+      "energy": 83.75
+    },
+    {
+      "units": 26,
+      "energy": 87.1
+    },
+    {
+      "units": 27,
+      "energy": 90.45
+    },
+    {
+      "units": 28,
+      "energy": 93.8
+    },
+    {
+      "units": 29,
+      "energy": 97.15
+    },
+    {
+      "units": 30,
+      "energy": 100.5
+    },
+    {
+      "units": 31,
+      "energy": 103.85
+    },
+    {
+      "units": 32,
+      "energy": 107.2
+    },
+    {
+      "units": 33,
+      "energy": 110.55
+    },
+    {
+      "units": 34,
+      "energy": 113.9
+    },
+    {
+      "units": 35,
+      "energy": 117.25
+    },
+    {
+      "units": 36,
+      "energy": 120.6
+    },
+    {
+      "units": 37,
+      "energy": 123.95
+    },
+    {
+      "units": 38,
+      "energy": 127.3
+    },
+    {
+      "units": 39,
+      "energy": 130.65
+    },
+    {
+      "units": 40,
+      "energy": 134
+    },
+    {
+      "units": 41,
+      "energy": 137.35
+    },
+    {
+      "units": 42,
+      "energy": 140.7
+    },
+    {
+      "units": 43,
+      "energy": 144.05
+    },
+    {
+      "units": 44,
+      "energy": 147.4
+    },
+    {
+      "units": 45,
+      "energy": 150.75
+    },
+    {
+      "units": 46,
+      "energy": 154.1
+    },
+    {
+      "units": 47,
+      "energy": 157.45
+    },
+    {
+      "units": 48,
+      "energy": 160.8
+    },
+    {
+      "units": 49,
+      "energy": 164.15
+    },
+    {
+      "units": 50,
+      "energy": 167.5
+    },
+    {
+      "units": 51,
+      "energy": 171.75
+    },
+    {
+      "units": 52,
+      "energy": 176
+    },
+    {
+      "units": 53,
+      "energy": 180.25
+    },
+    {
+      "units": 54,
+      "energy": 184.5
+    },
+    {
+      "units": 55,
+      "energy": 188.75
+    },
+    {
+      "units": 56,
+      "energy": 193
+    },
+    {
+      "units": 57,
+      "energy": 197.25
+    },
+    {
+      "units": 58,
+      "energy": 201.5
+    },
+    {
+      "units": 59,
+      "energy": 205.75
+    },
+    {
+      "units": 60,
+      "energy": 210
+    },
+    {
+      "units": 61,
+      "energy": 214.25
+    },
+    {
+      "units": 62,
+      "energy": 218.5
+    },
+    {
+      "units": 63,
+      "energy": 222.75
+    },
+    {
+      "units": 64,
+      "energy": 227
+    },
+    {
+      "units": 65,
+      "energy": 231.25
+    },
+    {
+      "units": 66,
+      "energy": 235.5
+    },
+    {
+      "units": 67,
+      "energy": 239.75
+    },
+    {
+      "units": 68,
+      "energy": 244
+    },
+    {
+      "units": 69,
+      "energy": 248.25
+    },
+    {
+      "units": 70,
+      "energy": 252.5
+    },
+    {
+      "units": 71,
+      "energy": 256.75
+    },
+    {
+      "units": 72,
+      "energy": 261
+    },
+    {
+      "units": 73,
+      "energy": 265.25
+    },
+    {
+      "units": 74,
+      "energy": 269.5
+    },
+    {
+      "units": 75,
+      "energy": 273.75
+    },
+    {
+      "units": 76,
+      "energy": 278
+    },
+    {
+      "units": 77,
+      "energy": 282.25
+    },
+    {
+      "units": 78,
+      "energy": 286.5
+    },
+    {
+      "units": 79,
+      "energy": 290.75
+    },
+    {
+      "units": 80,
+      "energy": 295
+    },
+    {
+      "units": 81,
+      "energy": 299.25
+    },
+    {
+      "units": 82,
+      "energy": 303.5
+    },
+    {
+      "units": 83,
+      "energy": 307.75
+    },
+    {
+      "units": 84,
+      "energy": 312
+    },
+    {
+      "units": 85,
+      "energy": 316.25
+    },
+    {
+      "units": 86,
+      "energy": 320.5
+    },
+    {
+      "units": 87,
+      "energy": 324.75
+    },
+    {
+      "units": 88,
+      "energy": 329
+    },
+    {
+      "units": 89,
+      "energy": 333.25
+    },
+    {
+      "units": 90,
+      "energy": 337.5
+    },
+    {
+      "units": 91,
+      "energy": 341.75
+    },
+    {
+      "units": 92,
+      "energy": 346
+    },
+    {
+      "units": 93,
+      "energy": 350.25
+    },
+    {
+      "units": 94,
+      "energy": 354.5
+    },
+    {
+      "units": 95,
+      "energy": 358.75
+    },
+    {
+      "units": 96,
+      "energy": 363
+    },
+    {
+      "units": 97,
+      "energy": 367.25
+    },
+    {
+      "units": 98,
+      "energy": 371.5
+    },
+    {
+      "units": 99,
+      "energy": 375.75
+    },
+    {
+      "units": 100,
+      "energy": 380
+    },
+    {
+      "units": 101,
+      "energy": 385.35
+    },
+    {
+      "units": 102,
+      "energy": 390.7
+    },
+    {
+      "units": 103,
+      "energy": 396.05
+    },
+    {
+      "units": 104,
+      "energy": 401.4
+    },
+    {
+      "units": 105,
+      "energy": 406.75
+    },
+    {
+      "units": 106,
+      "energy": 412.1
+    },
+    {
+      "units": 107,
+      "energy": 417.45
+    },
+    {
+      "units": 108,
+      "energy": 422.8
+    },
+    {
+      "units": 109,
+      "energy": 428.15
+    },
+    {
+      "units": 110,
+      "energy": 433.5
+    },
+    {
+      "units": 111,
+      "energy": 438.85
+    },
+    {
+      "units": 112,
+      "energy": 444.2
+    },
+    {
+      "units": 113,
+      "energy": 449.55
+    },
+    {
+      "units": 114,
+      "energy": 454.9
+    },
+    {
+      "units": 115,
+      "energy": 460.25
+    },
+    {
+      "units": 116,
+      "energy": 465.6
+    },
+    {
+      "units": 117,
+      "energy": 470.95
+    },
+    {
+      "units": 118,
+      "energy": 476.3
+    },
+    {
+      "units": 119,
+      "energy": 481.65
+    },
+    {
+      "units": 120,
+      "energy": 487
+    },
+    {
+      "units": 121,
+      "energy": 492.35
+    },
+    {
+      "units": 122,
+      "energy": 497.7
+    },
+    {
+      "units": 123,
+      "energy": 503.05
+    },
+    {
+      "units": 124,
+      "energy": 508.4
+    },
+    {
+      "units": 125,
+      "energy": 513.75
+    },
+    {
+      "units": 126,
+      "energy": 519.1
+    },
+    {
+      "units": 127,
+      "energy": 524.45
+    },
+    {
+      "units": 128,
+      "energy": 529.8
+    },
+    {
+      "units": 129,
+      "energy": 535.15
+    },
+    {
+      "units": 130,
+      "energy": 540.5
+    },
+    {
+      "units": 131,
+      "energy": 545.85
+    },
+    {
+      "units": 132,
+      "energy": 551.2
+    },
+    {
+      "units": 133,
+      "energy": 556.55
+    },
+    {
+      "units": 134,
+      "energy": 561.9
+    },
+    {
+      "units": 135,
+      "energy": 567.25
+    },
+    {
+      "units": 136,
+      "energy": 572.6
+    },
+    {
+      "units": 137,
+      "energy": 577.95
+    },
+    {
+      "units": 138,
+      "energy": 583.3
+    },
+    {
+      "units": 139,
+      "energy": 588.65
+    },
+    {
+      "units": 140,
+      "energy": 594
+    },
+    {
+      "units": 141,
+      "energy": 599.35
+    },
+    {
+      "units": 142,
+      "energy": 604.7
+    },
+    {
+      "units": 143,
+      "energy": 610.05
+    },
+    {
+      "units": 144,
+      "energy": 615.4
+    },
+    {
+      "units": 145,
+      "energy": 620.75
+    },
+    {
+      "units": 146,
+      "energy": 626.1
+    },
+    {
+      "units": 147,
+      "energy": 631.45
+    },
+    {
+      "units": 148,
+      "energy": 636.8
+    },
+    {
+      "units": 149,
+      "energy": 642.15
+    },
+    {
+      "units": 150,
+      "energy": 647.5
+    },
+    {
+      "units": 151,
+      "energy": 654.7
+    },
+    {
+      "units": 152,
+      "energy": 661.9
+    },
+    {
+      "units": 153,
+      "energy": 669.1
+    },
+    {
+      "units": 154,
+      "energy": 676.3
+    },
+    {
+      "units": 155,
+      "energy": 683.5
+    },
+    {
+      "units": 156,
+      "energy": 690.7
+    },
+    {
+      "units": 157,
+      "energy": 697.9
+    },
+    {
+      "units": 158,
+      "energy": 705.1
+    },
+    {
+      "units": 159,
+      "energy": 712.3
+    },
+    {
+      "units": 160,
+      "energy": 719.5
+    },
+    {
+      "units": 161,
+      "energy": 726.7
+    },
+    {
+      "units": 162,
+      "energy": 733.9
+    },
+    {
+      "units": 163,
+      "energy": 741.1
+    },
+    {
+      "units": 164,
+      "energy": 748.3
+    },
+    {
+      "units": 165,
+      "energy": 755.5
+    },
+    {
+      "units": 166,
+      "energy": 762.7
+    },
+    {
+      "units": 167,
+      "energy": 769.9
+    },
+    {
+      "units": 168,
+      "energy": 777.1
+    },
+    {
+      "units": 169,
+      "energy": 784.3
+    },
+    {
+      "units": 170,
+      "energy": 791.5
+    },
+    {
+      "units": 171,
+      "energy": 798.7
+    },
+    {
+      "units": 172,
+      "energy": 805.9
+    },
+    {
+      "units": 173,
+      "energy": 813.1
+    },
+    {
+      "units": 174,
+      "energy": 820.3
+    },
+    {
+      "units": 175,
+      "energy": 827.5
+    },
+    {
+      "units": 176,
+      "energy": 834.7
+    },
+    {
+      "units": 177,
+      "energy": 841.9
+    },
+    {
+      "units": 178,
+      "energy": 849.1
+    },
+    {
+      "units": 179,
+      "energy": 856.3
+    },
+    {
+      "units": 180,
+      "energy": 863.5
+    },
+    {
+      "units": 181,
+      "energy": 870.7
+    },
+    {
+      "units": 182,
+      "energy": 877.9
+    },
+    {
+      "units": 183,
+      "energy": 885.1
+    },
+    {
+      "units": 184,
+      "energy": 892.3
+    },
+    {
+      "units": 185,
+      "energy": 899.5
+    },
+    {
+      "units": 186,
+      "energy": 906.7
+    },
+    {
+      "units": 187,
+      "energy": 913.9
+    },
+    {
+      "units": 188,
+      "energy": 921.1
+    },
+    {
+      "units": 189,
+      "energy": 928.3
+    },
+    {
+      "units": 190,
+      "energy": 935.5
+    },
+    {
+      "units": 191,
+      "energy": 942.7
+    },
+    {
+      "units": 192,
+      "energy": 949.9
+    },
+    {
+      "units": 193,
+      "energy": 957.1
+    },
+    {
+      "units": 194,
+      "energy": 964.3
+    },
+    {
+      "units": 195,
+      "energy": 971.5
+    },
+    {
+      "units": 196,
+      "energy": 978.7
+    },
+    {
+      "units": 197,
+      "energy": 985.9
+    },
+    {
+      "units": 198,
+      "energy": 993.1
+    },
+    {
+      "units": 199,
+      "energy": 1000.3
+    },
+    {
+      "units": 200,
+      "energy": 1007.5
+    },
+    {
+      "units": 201,
+      "energy": 1016
+    },
+    {
+      "units": 202,
+      "energy": 1024.5
+    },
+    {
+      "units": 203,
+      "energy": 1033
+    },
+    {
+      "units": 204,
+      "energy": 1041.5
+    },
+    {
+      "units": 205,
+      "energy": 1050
+    },
+    {
+      "units": 206,
+      "energy": 1058.5
+    },
+    {
+      "units": 207,
+      "energy": 1067
+    },
+    {
+      "units": 208,
+      "energy": 1075.5
+    },
+    {
+      "units": 209,
+      "energy": 1084
+    },
+    {
+      "units": 210,
+      "energy": 1092.5
+    },
+    {
+      "units": 211,
+      "energy": 1101
+    },
+    {
+      "units": 212,
+      "energy": 1109.5
+    },
+    {
+      "units": 213,
+      "energy": 1118
+    },
+    {
+      "units": 214,
+      "energy": 1126.5
+    },
+    {
+      "units": 215,
+      "energy": 1135
+    },
+    {
+      "units": 216,
+      "energy": 1143.5
+    },
+    {
+      "units": 217,
+      "energy": 1152
+    },
+    {
+      "units": 218,
+      "energy": 1160.5
+    },
+    {
+      "units": 219,
+      "energy": 1169
+    },
+    {
+      "units": 220,
+      "energy": 1177.5
+    },
+    {
+      "units": 221,
+      "energy": 1186
+    },
+    {
+      "units": 222,
+      "energy": 1194.5
+    },
+    {
+      "units": 223,
+      "energy": 1203
+    },
+    {
+      "units": 224,
+      "energy": 1211.5
+    },
+    {
+      "units": 225,
+      "energy": 1220
+    },
+    {
+      "units": 226,
+      "energy": 1228.5
+    },
+    {
+      "units": 227,
+      "energy": 1237
+    },
+    {
+      "units": 228,
+      "energy": 1245.5
+    },
+    {
+      "units": 229,
+      "energy": 1254
+    },
+    {
+      "units": 230,
+      "energy": 1262.5
+    },
+    {
+      "units": 231,
+      "energy": 1271
+    },
+    {
+      "units": 232,
+      "energy": 1279.5
+    },
+    {
+      "units": 233,
+      "energy": 1288
+    },
+    {
+      "units": 234,
+      "energy": 1296.5
+    },
+    {
+      "units": 235,
+      "energy": 1305
+    },
+    {
+      "units": 236,
+      "energy": 1313.5
+    },
+    {
+      "units": 237,
+      "energy": 1322
+    },
+    {
+      "units": 238,
+      "energy": 1330.5
+    },
+    {
+      "units": 239,
+      "energy": 1339
+    },
+    {
+      "units": 240,
+      "energy": 1347.5
+    },
+    {
+      "units": 241,
+      "energy": 1356
+    },
+    {
+      "units": 242,
+      "energy": 1364.5
+    },
+    {
+      "units": 243,
+      "energy": 1373
+    },
+    {
+      "units": 244,
+      "energy": 1381.5
+    },
+    {
+      "units": 245,
+      "energy": 1390
+    },
+    {
+      "units": 246,
+      "energy": 1398.5
+    },
+    {
+      "units": 247,
+      "energy": 1407
+    },
+    {
+      "units": 248,
+      "energy": 1415.5
+    },
+    {
+      "units": 249,
+      "energy": 1424
+    },
+    {
+      "units": 250,
+      "energy": 1432.5
+    },
+    {
+      "units": 251,
+      "energy": 1694.25
+    },
+    {
+      "units": 252,
+      "energy": 1701
+    },
+    {
+      "units": 253,
+      "energy": 1707.75
+    },
+    {
+      "units": 254,
+      "energy": 1714.5
+    },
+    {
+      "units": 255,
+      "energy": 1721.25
+    },
+    {
+      "units": 256,
+      "energy": 1728
+    },
+    {
+      "units": 257,
+      "energy": 1734.75
+    },
+    {
+      "units": 258,
+      "energy": 1741.5
+    },
+    {
+      "units": 259,
+      "energy": 1748.25
+    },
+    {
+      "units": 260,
+      "energy": 1755
+    },
+    {
+      "units": 261,
+      "energy": 1761.75
+    },
+    {
+      "units": 262,
+      "energy": 1768.5
+    },
+    {
+      "units": 263,
+      "energy": 1775.25
+    },
+    {
+      "units": 264,
+      "energy": 1782
+    },
+    {
+      "units": 265,
+      "energy": 1788.75
+    },
+    {
+      "units": 266,
+      "energy": 1795.5
+    },
+    {
+      "units": 267,
+      "energy": 1802.25
+    },
+    {
+      "units": 268,
+      "energy": 1809
+    },
+    {
+      "units": 269,
+      "energy": 1815.75
+    },
+    {
+      "units": 270,
+      "energy": 1822.5
+    },
+    {
+      "units": 271,
+      "energy": 1829.25
+    },
+    {
+      "units": 272,
+      "energy": 1836
+    },
+    {
+      "units": 273,
+      "energy": 1842.75
+    },
+    {
+      "units": 274,
+      "energy": 1849.5
+    },
+    {
+      "units": 275,
+      "energy": 1856.25
+    },
+    {
+      "units": 276,
+      "energy": 1863
+    },
+    {
+      "units": 277,
+      "energy": 1869.75
+    },
+    {
+      "units": 278,
+      "energy": 1876.5
+    },
+    {
+      "units": 279,
+      "energy": 1883.25
+    },
+    {
+      "units": 280,
+      "energy": 1890
+    },
+    {
+      "units": 281,
+      "energy": 1896.75
+    },
+    {
+      "units": 282,
+      "energy": 1903.5
+    },
+    {
+      "units": 283,
+      "energy": 1910.25
+    },
+    {
+      "units": 284,
+      "energy": 1917
+    },
+    {
+      "units": 285,
+      "energy": 1923.75
+    },
+    {
+      "units": 286,
+      "energy": 1930.5
+    },
+    {
+      "units": 287,
+      "energy": 1937.25
+    },
+    {
+      "units": 288,
+      "energy": 1944
+    },
+    {
+      "units": 289,
+      "energy": 1950.75
+    },
+    {
+      "units": 290,
+      "energy": 1957.5
+    },
+    {
+      "units": 291,
+      "energy": 1964.25
+    },
+    {
+      "units": 292,
+      "energy": 1971
+    },
+    {
+      "units": 293,
+      "energy": 1977.75
+    },
+    {
+      "units": 294,
+      "energy": 1984.5
+    },
+    {
+      "units": 295,
+      "energy": 1991.25
+    },
+    {
+      "units": 296,
+      "energy": 1998
+    },
+    {
+      "units": 297,
+      "energy": 2004.75
+    },
+    {
+      "units": 298,
+      "energy": 2011.5
+    },
+    {
+      "units": 299,
+      "energy": 2018.25
+    },
+    {
+      "units": 300,
+      "energy": 2025
+    },
+    {
+      "units": 301,
+      "energy": 2287.6
+    },
+    {
+      "units": 302,
+      "energy": 2295.2
+    },
+    {
+      "units": 303,
+      "energy": 2302.8
+    },
+    {
+      "units": 304,
+      "energy": 2310.4
+    },
+    {
+      "units": 305,
+      "energy": 2318
+    },
+    {
+      "units": 306,
+      "energy": 2325.6
+    },
+    {
+      "units": 307,
+      "energy": 2333.2
+    },
+    {
+      "units": 308,
+      "energy": 2340.8
+    },
+    {
+      "units": 309,
+      "energy": 2348.4
+    },
+    {
+      "units": 310,
+      "energy": 2356
+    },
+    {
+      "units": 311,
+      "energy": 2363.6
+    },
+    {
+      "units": 312,
+      "energy": 2371.2
+    },
+    {
+      "units": 313,
+      "energy": 2378.8
+    },
+    {
+      "units": 314,
+      "energy": 2386.4
+    },
+    {
+      "units": 315,
+      "energy": 2394
+    },
+    {
+      "units": 316,
+      "energy": 2401.6
+    },
+    {
+      "units": 317,
+      "energy": 2409.2
+    },
+    {
+      "units": 318,
+      "energy": 2416.8
+    },
+    {
+      "units": 319,
+      "energy": 2424.4
+    },
+    {
+      "units": 320,
+      "energy": 2432
+    },
+    {
+      "units": 321,
+      "energy": 2439.6
+    },
+    {
+      "units": 322,
+      "energy": 2447.2
+    },
+    {
+      "units": 323,
+      "energy": 2454.8
+    },
+    {
+      "units": 324,
+      "energy": 2462.4
+    },
+    {
+      "units": 325,
+      "energy": 2470
+    },
+    {
+      "units": 326,
+      "energy": 2477.6
+    },
+    {
+      "units": 327,
+      "energy": 2485.2
+    },
+    {
+      "units": 328,
+      "energy": 2492.8
+    },
+    {
+      "units": 329,
+      "energy": 2500.4
+    },
+    {
+      "units": 330,
+      "energy": 2508
+    },
+    {
+      "units": 331,
+      "energy": 2515.6
+    },
+    {
+      "units": 332,
+      "energy": 2523.2
+    },
+    {
+      "units": 333,
+      "energy": 2530.8
+    },
+    {
+      "units": 334,
+      "energy": 2538.4
+    },
+    {
+      "units": 335,
+      "energy": 2546
+    },
+    {
+      "units": 336,
+      "energy": 2553.6
+    },
+    {
+      "units": 337,
+      "energy": 2561.2
+    },
+    {
+      "units": 338,
+      "energy": 2568.8
+    },
+    {
+      "units": 339,
+      "energy": 2576.4
+    },
+    {
+      "units": 340,
+      "energy": 2584
+    },
+    {
+      "units": 341,
+      "energy": 2591.6
+    },
+    {
+      "units": 342,
+      "energy": 2599.2
+    },
+    {
+      "units": 343,
+      "energy": 2606.8
+    },
+    {
+      "units": 344,
+      "energy": 2614.4
+    },
+    {
+      "units": 345,
+      "energy": 2622
+    },
+    {
+      "units": 346,
+      "energy": 2629.6
+    },
+    {
+      "units": 347,
+      "energy": 2637.2
+    },
+    {
+      "units": 348,
+      "energy": 2644.8
+    },
+    {
+      "units": 349,
+      "energy": 2652.4
+    },
+    {
+      "units": 350,
+      "energy": 2660
+    },
+    {
+      "units": 351,
+      "energy": 2790.45
+    },
+    {
+      "units": 352,
+      "energy": 2798.4
+    },
+    {
+      "units": 353,
+      "energy": 2806.35
+    },
+    {
+      "units": 354,
+      "energy": 2814.3
+    },
+    {
+      "units": 355,
+      "energy": 2822.25
+    },
+    {
+      "units": 356,
+      "energy": 2830.2
+    },
+    {
+      "units": 357,
+      "energy": 2838.15
+    },
+    {
+      "units": 358,
+      "energy": 2846.1
+    },
+    {
+      "units": 359,
+      "energy": 2854.05
+    },
+    {
+      "units": 360,
+      "energy": 2862
+    },
+    {
+      "units": 361,
+      "energy": 2869.95
+    },
+    {
+      "units": 362,
+      "energy": 2877.9
+    },
+    {
+      "units": 363,
+      "energy": 2885.85
+    },
+    {
+      "units": 364,
+      "energy": 2893.8
+    },
+    {
+      "units": 365,
+      "energy": 2901.75
+    },
+    {
+      "units": 366,
+      "energy": 2909.7
+    },
+    {
+      "units": 367,
+      "energy": 2917.65
+    },
+    {
+      "units": 368,
+      "energy": 2925.6
+    },
+    {
+      "units": 369,
+      "energy": 2933.55
+    },
+    {
+      "units": 370,
+      "energy": 2941.5
+    },
+    {
+      "units": 371,
+      "energy": 2949.45
+    },
+    {
+      "units": 372,
+      "energy": 2957.4
+    },
+    {
+      "units": 373,
+      "energy": 2965.35
+    },
+    {
+      "units": 374,
+      "energy": 2973.3
+    },
+    {
+      "units": 375,
+      "energy": 2981.25
+    },
+    {
+      "units": 376,
+      "energy": 2989.2
+    },
+    {
+      "units": 377,
+      "energy": 2997.15
+    },
+    {
+      "units": 378,
+      "energy": 3005.1
+    },
+    {
+      "units": 379,
+      "energy": 3013.05
+    },
+    {
+      "units": 380,
+      "energy": 3021
+    },
+    {
+      "units": 381,
+      "energy": 3028.95
+    },
+    {
+      "units": 382,
+      "energy": 3036.9
+    },
+    {
+      "units": 383,
+      "energy": 3044.85
+    },
+    {
+      "units": 384,
+      "energy": 3052.8
+    },
+    {
+      "units": 385,
+      "energy": 3060.75
+    },
+    {
+      "units": 386,
+      "energy": 3068.7
+    },
+    {
+      "units": 387,
+      "energy": 3076.65
+    },
+    {
+      "units": 388,
+      "energy": 3084.6
+    },
+    {
+      "units": 389,
+      "energy": 3092.55
+    },
+    {
+      "units": 390,
+      "energy": 3100.5
+    },
+    {
+      "units": 391,
+      "energy": 3108.45
+    },
+    {
+      "units": 392,
+      "energy": 3116.4
+    },
+    {
+      "units": 393,
+      "energy": 3124.35
+    },
+    {
+      "units": 394,
+      "energy": 3132.3
+    },
+    {
+      "units": 395,
+      "energy": 3140.25
+    },
+    {
+      "units": 396,
+      "energy": 3148.2
+    },
+    {
+      "units": 397,
+      "energy": 3156.15
+    },
+    {
+      "units": 398,
+      "energy": 3164.1
+    },
+    {
+      "units": 399,
+      "energy": 3172.05
+    },
+    {
+      "units": 400,
+      "energy": 3180
+    },
+    {
+      "units": 401,
+      "energy": 3308.25
+    },
+    {
+      "units": 402,
+      "energy": 3316.5
+    },
+    {
+      "units": 403,
+      "energy": 3324.75
+    },
+    {
+      "units": 404,
+      "energy": 3333
+    },
+    {
+      "units": 405,
+      "energy": 3341.25
+    },
+    {
+      "units": 406,
+      "energy": 3349.5
+    },
+    {
+      "units": 407,
+      "energy": 3357.75
+    },
+    {
+      "units": 408,
+      "energy": 3366
+    },
+    {
+      "units": 409,
+      "energy": 3374.25
+    },
+    {
+      "units": 410,
+      "energy": 3382.5
+    },
+    {
+      "units": 411,
+      "energy": 3390.75
+    },
+    {
+      "units": 412,
+      "energy": 3399
+    },
+    {
+      "units": 413,
+      "energy": 3407.25
+    },
+    {
+      "units": 414,
+      "energy": 3415.5
+    },
+    {
+      "units": 415,
+      "energy": 3423.75
+    },
+    {
+      "units": 416,
+      "energy": 3432
+    },
+    {
+      "units": 417,
+      "energy": 3440.25
+    },
+    {
+      "units": 418,
+      "energy": 3448.5
+    },
+    {
+      "units": 419,
+      "energy": 3456.75
+    },
+    {
+      "units": 420,
+      "energy": 3465
+    },
+    {
+      "units": 421,
+      "energy": 3473.25
+    },
+    {
+      "units": 422,
+      "energy": 3481.5
+    },
+    {
+      "units": 423,
+      "energy": 3489.75
+    },
+    {
+      "units": 424,
+      "energy": 3498
+    },
+    {
+      "units": 425,
+      "energy": 3506.25
+    },
+    {
+      "units": 426,
+      "energy": 3514.5
+    },
+    {
+      "units": 427,
+      "energy": 3522.75
+    },
+    {
+      "units": 428,
+      "energy": 3531
+    },
+    {
+      "units": 429,
+      "energy": 3539.25
+    },
+    {
+      "units": 430,
+      "energy": 3547.5
+    },
+    {
+      "units": 431,
+      "energy": 3555.75
+    },
+    {
+      "units": 432,
+      "energy": 3564
+    },
+    {
+      "units": 433,
+      "energy": 3572.25
+    },
+    {
+      "units": 434,
+      "energy": 3580.5
+    },
+    {
+      "units": 435,
+      "energy": 3588.75
+    },
+    {
+      "units": 436,
+      "energy": 3597
+    },
+    {
+      "units": 437,
+      "energy": 3605.25
+    },
+    {
+      "units": 438,
+      "energy": 3613.5
+    },
+    {
+      "units": 439,
+      "energy": 3621.75
+    },
+    {
+      "units": 440,
+      "energy": 3630
+    },
+    {
+      "units": 441,
+      "energy": 3638.25
+    },
+    {
+      "units": 442,
+      "energy": 3646.5
+    },
+    {
+      "units": 443,
+      "energy": 3654.75
+    },
+    {
+      "units": 444,
+      "energy": 3663
+    },
+    {
+      "units": 445,
+      "energy": 3671.25
+    },
+    {
+      "units": 446,
+      "energy": 3679.5
+    },
+    {
+      "units": 447,
+      "energy": 3687.75
+    },
+    {
+      "units": 448,
+      "energy": 3696
+    },
+    {
+      "units": 449,
+      "energy": 3704.25
+    },
+    {
+      "units": 450,
+      "energy": 3712.5
+    },
+    {
+      "units": 451,
+      "energy": 3720.75
+    },
+    {
+      "units": 452,
+      "energy": 3729
+    },
+    {
+      "units": 453,
+      "energy": 3737.25
+    },
+    {
+      "units": 454,
+      "energy": 3745.5
+    },
+    {
+      "units": 455,
+      "energy": 3753.75
+    },
+    {
+      "units": 456,
+      "energy": 3762
+    },
+    {
+      "units": 457,
+      "energy": 3770.25
+    },
+    {
+      "units": 458,
+      "energy": 3778.5
+    },
+    {
+      "units": 459,
+      "energy": 3786.75
+    },
+    {
+      "units": 460,
+      "energy": 3795
+    },
+    {
+      "units": 461,
+      "energy": 3803.25
+    },
+    {
+      "units": 462,
+      "energy": 3811.5
+    },
+    {
+      "units": 463,
+      "energy": 3819.75
+    },
+    {
+      "units": 464,
+      "energy": 3828
+    },
+    {
+      "units": 465,
+      "energy": 3836.25
+    },
+    {
+      "units": 466,
+      "energy": 3844.5
+    },
+    {
+      "units": 467,
+      "energy": 3852.75
+    },
+    {
+      "units": 468,
+      "energy": 3861
+    },
+    {
+      "units": 469,
+      "energy": 3869.25
+    },
+    {
+      "units": 470,
+      "energy": 3877.5
+    },
+    {
+      "units": 471,
+      "energy": 3885.75
+    },
+    {
+      "units": 472,
+      "energy": 3894
+    },
+    {
+      "units": 473,
+      "energy": 3902.25
+    },
+    {
+      "units": 474,
+      "energy": 3910.5
+    },
+    {
+      "units": 475,
+      "energy": 3918.75
+    },
+    {
+      "units": 476,
+      "energy": 3927
+    },
+    {
+      "units": 477,
+      "energy": 3935.25
+    },
+    {
+      "units": 478,
+      "energy": 3943.5
+    },
+    {
+      "units": 479,
+      "energy": 3951.75
+    },
+    {
+      "units": 480,
+      "energy": 3960
+    },
+    {
+      "units": 481,
+      "energy": 3968.25
+    },
+    {
+      "units": 482,
+      "energy": 3976.5
+    },
+    {
+      "units": 483,
+      "energy": 3984.75
+    },
+    {
+      "units": 484,
+      "energy": 3993
+    },
+    {
+      "units": 485,
+      "energy": 4001.25
+    },
+    {
+      "units": 486,
+      "energy": 4009.5
+    },
+    {
+      "units": 487,
+      "energy": 4017.75
+    },
+    {
+      "units": 488,
+      "energy": 4026
+    },
+    {
+      "units": 489,
+      "energy": 4034.25
+    },
+    {
+      "units": 490,
+      "energy": 4042.5
+    },
+    {
+      "units": 491,
+      "energy": 4050.75
+    },
+    {
+      "units": 492,
+      "energy": 4059
+    },
+    {
+      "units": 493,
+      "energy": 4067.25
+    },
+    {
+      "units": 494,
+      "energy": 4075.5
+    },
+    {
+      "units": 495,
+      "energy": 4083.75
+    },
+    {
+      "units": 496,
+      "energy": 4092
+    },
+    {
+      "units": 497,
+      "energy": 4100.25
+    },
+    {
+      "units": 498,
+      "energy": 4108.5
+    },
+    {
+      "units": 499,
+      "energy": 4116.75
+    },
+    {
+      "units": 500,
+      "energy": 4125
+    },
+    {
+      "units": 501,
+      "energy": 4609.2
+    },
+    {
+      "units": 502,
+      "energy": 4618.4
+    },
+    {
+      "units": 503,
+      "energy": 4627.6
+    },
+    {
+      "units": 504,
+      "energy": 4636.8
+    },
+    {
+      "units": 505,
+      "energy": 4646
+    },
+    {
+      "units": 506,
+      "energy": 4655.2
+    },
+    {
+      "units": 507,
+      "energy": 4664.4
+    },
+    {
+      "units": 508,
+      "energy": 4673.6
+    },
+    {
+      "units": 509,
+      "energy": 4682.8
+    },
+    {
+      "units": 510,
+      "energy": 4692
+    },
+    {
+      "units": 511,
+      "energy": 4701.2
+    },
+    {
+      "units": 512,
+      "energy": 4710.4
+    },
+    {
+      "units": 513,
+      "energy": 4719.6
+    },
+    {
+      "units": 514,
+      "energy": 4728.8
+    },
+    {
+      "units": 515,
+      "energy": 4738
+    },
+    {
+      "units": 516,
+      "energy": 4747.2
+    },
+    {
+      "units": 517,
+      "energy": 4756.4
+    },
+    {
+      "units": 518,
+      "energy": 4765.6
+    },
+    {
+      "units": 519,
+      "energy": 4774.8
+    },
+    {
+      "units": 520,
+      "energy": 4784
+    },
+    {
+      "units": 521,
+      "energy": 4793.2
+    },
+    {
+      "units": 522,
+      "energy": 4802.4
+    },
+    {
+      "units": 523,
+      "energy": 4811.6
+    },
+    {
+      "units": 524,
+      "energy": 4820.8
+    },
+    {
+      "units": 525,
+      "energy": 4830
+    },
+    {
+      "units": 526,
+      "energy": 4839.2
+    },
+    {
+      "units": 527,
+      "energy": 4848.4
+    },
+    {
+      "units": 528,
+      "energy": 4857.6
+    },
+    {
+      "units": 529,
+      "energy": 4866.8
+    },
+    {
+      "units": 530,
+      "energy": 4876
+    },
+    {
+      "units": 531,
+      "energy": 4885.2
+    },
+    {
+      "units": 532,
+      "energy": 4894.4
+    },
+    {
+      "units": 533,
+      "energy": 4903.6
+    },
+    {
+      "units": 534,
+      "energy": 4912.8
+    },
+    {
+      "units": 535,
+      "energy": 4922
+    },
+    {
+      "units": 536,
+      "energy": 4931.2
+    },
+    {
+      "units": 537,
+      "energy": 4940.4
+    },
+    {
+      "units": 538,
+      "energy": 4949.6
+    },
+    {
+      "units": 539,
+      "energy": 4958.8
+    },
+    {
+      "units": 540,
+      "energy": 4968
+    },
+    {
+      "units": 541,
+      "energy": 4977.2
+    },
+    {
+      "units": 542,
+      "energy": 4986.4
+    },
+    {
+      "units": 543,
+      "energy": 4995.6
+    },
+    {
+      "units": 544,
+      "energy": 5004.8
+    },
+    {
+      "units": 545,
+      "energy": 5014
+    },
+    {
+      "units": 546,
+      "energy": 5023.2
+    },
+    {
+      "units": 547,
+      "energy": 5032.4
+    },
+    {
+      "units": 548,
+      "energy": 5041.6
+    },
+    {
+      "units": 549,
+      "energy": 5050.8
+    },
+    {
+      "units": 550,
+      "energy": 5060
+    },
+    {
+      "units": 551,
+      "energy": 5069.2
+    },
+    {
+      "units": 552,
+      "energy": 5078.4
+    },
+    {
+      "units": 553,
+      "energy": 5087.6
+    },
+    {
+      "units": 554,
+      "energy": 5096.8
+    },
+    {
+      "units": 555,
+      "energy": 5106
+    },
+    {
+      "units": 556,
+      "energy": 5115.2
+    },
+    {
+      "units": 557,
+      "energy": 5124.4
+    },
+    {
+      "units": 558,
+      "energy": 5133.6
+    },
+    {
+      "units": 559,
+      "energy": 5142.8
+    },
+    {
+      "units": 560,
+      "energy": 5152
+    },
+    {
+      "units": 561,
+      "energy": 5161.2
+    },
+    {
+      "units": 562,
+      "energy": 5170.4
+    },
+    {
+      "units": 563,
+      "energy": 5179.6
+    },
+    {
+      "units": 564,
+      "energy": 5188.8
+    },
+    {
+      "units": 565,
+      "energy": 5198
+    },
+    {
+      "units": 566,
+      "energy": 5207.2
+    },
+    {
+      "units": 567,
+      "energy": 5216.4
+    },
+    {
+      "units": 568,
+      "energy": 5225.6
+    },
+    {
+      "units": 569,
+      "energy": 5234.8
+    },
+    {
+      "units": 570,
+      "energy": 5244
+    },
+    {
+      "units": 571,
+      "energy": 5253.2
+    },
+    {
+      "units": 572,
+      "energy": 5262.4
+    },
+    {
+      "units": 573,
+      "energy": 5271.6
+    },
+    {
+      "units": 574,
+      "energy": 5280.8
+    },
+    {
+      "units": 575,
+      "energy": 5290
+    },
+    {
+      "units": 576,
+      "energy": 5299.2
+    },
+    {
+      "units": 577,
+      "energy": 5308.4
+    },
+    {
+      "units": 578,
+      "energy": 5317.6
+    },
+    {
+      "units": 579,
+      "energy": 5326.8
+    },
+    {
+      "units": 580,
+      "energy": 5336
+    },
+    {
+      "units": 581,
+      "energy": 5345.2
+    },
+    {
+      "units": 582,
+      "energy": 5354.4
+    },
+    {
+      "units": 583,
+      "energy": 5363.6
+    },
+    {
+      "units": 584,
+      "energy": 5372.8
+    },
+    {
+      "units": 585,
+      "energy": 5382
+    },
+    {
+      "units": 586,
+      "energy": 5391.2
+    },
+    {
+      "units": 587,
+      "energy": 5400.4
+    },
+    {
+      "units": 588,
+      "energy": 5409.6
+    },
+    {
+      "units": 589,
+      "energy": 5418.8
+    },
+    {
+      "units": 590,
+      "energy": 5428
+    },
+    {
+      "units": 591,
+      "energy": 5437.2
+    },
+    {
+      "units": 592,
+      "energy": 5446.4
+    },
+    {
+      "units": 593,
+      "energy": 5455.6
+    },
+    {
+      "units": 594,
+      "energy": 5464.8
+    },
+    {
+      "units": 595,
+      "energy": 5474
+    },
+    {
+      "units": 596,
+      "energy": 5483.2
+    },
+    {
+      "units": 597,
+      "energy": 5492.4
+    },
+    {
+      "units": 598,
+      "energy": 5501.6
+    },
+    {
+      "units": 599,
+      "energy": 5510.8
+    },
+    {
+      "units": 600,
+      "energy": 5520
+    }
+  ],
+  "solar_to_beat_cliff": {
+    "kw": 1,
+    "monthly_units_after": 152,
+    "saving_month": 1106.6
+  },
+  "assumptions": [
+    {
+      "id": "kseb-lt1a-2025",
+      "value": "kseb-lt1a-2025",
+      "source": "KSEB LT-1A Domestic tariff table (idea doc section 7, S7). Check against KSEB's online bill calculator.",
+      "verified": true
+    },
+    {
+      "id": "solar_units_per_kw_month",
+      "value": 110,
+      "source": "idea doc 5.2 rule of thumb",
+      "verified": false
+    },
+    {
+      "id": "bill_scope",
+      "value": "energy charge + fixed charge",
+      "source": "duty and fuel surcharge are not included",
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "sun-plan@1",
+  "date": "2026-10-25",
+  "kw": 5,
+  "sun_hours_kw": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0.01,
+    0.16,
+    0.43,
+    0.76,
+    0.89,
+    1.12,
+    1.49,
+    0.8,
+    0.75,
+    0.89,
+    0.5,
+    0.22,
+    0.03,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "plan": [
+    {
+      "appliance": "ev_charger",
+      "start": "10:00",
+      "minutes": 180,
+      "kwh": 7,
+      "usual_start": "21:00"
+    },
+    {
+      "appliance": "washing_machine",
+      "start": "14:30",
+      "minutes": 90,
+      "kwh": 1.5,
+      "usual_start": "20:00"
+    },
+    {
+      "appliance": "motor",
+      "start": "13:00",
+      "minutes": 60,
+      "kwh": 0.75,
+      "usual_start": "19:00"
+    },
+    {
+      "appliance": "iron",
+      "start": "09:00",
+      "minutes": 30,
+      "kwh": 0.5,
+      "usual_start": "19:30"
+    }
+  ],
+  "tod": {
+    "applies": true,
+    "threshold_units": 500,
+    "source": "kseb.in LT-1 Domestic page, ToD note: 90% of the ruling tariff 06-18 h, 125% 18-22 h, 100% 22-06 h; applies to homes whose average monthly use is above 500 units (ToD meter needed)",
+    "rate": 9.2,
+    "cost_before_day": 101.39,
+    "cost_after_day": 80.73,
+    "saving_day": 20.66,
+    "saving_month": 628.11
+  },
+  "self_use_pct": {
+    "before": 62,
+    "after": 97
+  },
+  "units_moved_from_peak": 5.08,
+  "pv_day_kwh": 8.04,
+  "typical_day": {
+    "self_use_pct": {
+      "before": 31,
+      "after": 75
+    },
+    "units_moved_from_peak": 5.08,
+    "pv_day_kwh": 18.51
+  },
+  "alerts": [
+    {
+      "key": "alert.evening_peak",
+      "params": {
+        "from": "18:00",
+        "to": "22:00"
+      }
+    },
+    {
+      "key": "alert.cloudy_day",
+      "params": {
+        "sun_pct_of_typical": 43
+      }
+    },
+    {
+      "key": "alert.heavy_rain",
+      "params": {
+        "mm": 45
+      }
+    }
+  ],
+  "quality": {
+    "data": "forecast"
+  },
+  "assumptions": [
+    {
+      "id": "household_profile",
+      "value": "typical Kerala home",
+      "source": "ASSUMPTION: a typical Kerala home profile (30% always-on: fridge, fans, standby; the rest shaped by use through the day). Tuned so a typical home uses about a third of its own solar at home; KSEB reports 36% (S6).",
+      "verified": false
+    },
+    {
+      "id": "appliances",
+      "value": [
+        "motor",
+        "washing_machine",
+        "iron"
+      ],
+      "source": "assumed sizes and usual times (rules.veyil.appliances)",
+      "verified": false
+    }
+  ]
+}

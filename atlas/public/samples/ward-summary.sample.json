@@ -1,0 +1,57 @@
+{
+  "wards": [
+    {
+      "ward_id": "KLM-W07",
+      "name": "Ward 7 (Campus Enclave)",
+      "panchayat": "Kottamkara Panchayat",
+      "district": "Kollam",
+      "centroid": { "lat": 8.9502, "lng": 76.6214 },
+      "homes_estimated": 500,
+      "roofs_mapped": 312,
+      "potential_kw": 780.0,
+      "avg_roof_score": 68,
+      "pledged_homes": 63,
+      "firm_homes": 41,
+      "target_homes": 100,
+      "campaign_status": "open",
+      "data_quality": "survey+modelled",
+      "updated_at": "2026-10-24T10:00:00+05:30"
+    },
+    {
+      "ward_id": "TVM-P04",
+      "name": "Ward 4 (Pozhiyoor Coastal)",
+      "panchayat": "Kulathoor Panchayat",
+      "district": "Thiruvananthapuram",
+      "centroid": { "lat": 8.3056, "lng": 77.0734 },
+      "homes_estimated": 420,
+      "roofs_mapped": 245,
+      "potential_kw": 610.0,
+      "avg_roof_score": 59,
+      "pledged_homes": 72,
+      "firm_homes": 55,
+      "target_homes": 80,
+      "campaign_status": "open",
+      "data_quality": "demo",
+      "updated_at": "2026-10-24T10:00:00+05:30"
+    },
+    {
+      "ward_id": "ALP-K12",
+      "name": "Ward 12 (Kuttanad Canal)",
+      "panchayat": "Champakulam Panchayat",
+      "district": "Alappuzha",
+      "centroid": { "lat": 9.4042, "lng": 76.4258 },
+      "homes_estimated": 380,
+      "roofs_mapped": 210,
+      "potential_kw": 520.0,
+      "avg_roof_score": 64,
+      "pledged_homes": 24,
+      "firm_homes": 14,
+      "target_homes": 75,
+      "campaign_status": "open",
+      "data_quality": "demo",
+      "updated_at": "2026-10-24T10:00:00+05:30"
+    }
+  ],
+  "total_wards": 3,
+  "timestamp": "2026-10-24T10:00:00+05:30"
+}

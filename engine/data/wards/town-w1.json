@@ -1,0 +1,55 @@
+{
+  "schema": "ward-summary@1",
+  "ward_id": "town-w1",
+  "name": {
+    "en": "Pattom ward (approximate)",
+    "ml": "പട്ടം വാർഡ്"
+  },
+  "boundary_quality": "approximate",
+  "boundary": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          76.9378829,
+          8.5141064
+        ],
+        [
+          76.94688289999999,
+          8.5141064
+        ],
+        [
+          76.94688289999999,
+          8.5231064
+        ],
+        [
+          76.9378829,
+          8.5231064
+        ],
+        [
+          76.9378829,
+          8.5141064
+        ]
+      ]
+    ]
+  },
+  "roofs": 1256,
+  "roof_area_m2": 164801,
+  "potential": {
+    "kw": 2471.5,
+    "units_year": 3108577,
+    "litres_year": 273517881,
+    "co2_t_year": 2207.09
+  },
+  "per_home_avg": {
+    "kw": 1.97,
+    "units_year": 2475,
+    "litres_year": 217769,
+    "co2_t_year": 1.76
+  },
+  "quality": {
+    "data": "cached",
+    "roofs_source": "osm_count",
+    "note": null
+  }
+}

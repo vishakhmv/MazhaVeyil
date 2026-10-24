@@ -1,0 +1,77 @@
+{
+  "schema": "impact@1",
+  "adoption_pct": 25,
+  "wards": [
+    {
+      "ward_id": "pozhiyoor-w1",
+      "name": {
+        "en": "Pozhiyoor (approximate)",
+        "ml": "പൊഴിയൂർ"
+      },
+      "homes_total": 500,
+      "homes_adopting": 125,
+      "kw": 250,
+      "units_year": 306032,
+      "litres_year": 11780707,
+      "co2_t_year": 222.49
+    },
+    {
+      "ward_id": "town-w1",
+      "name": {
+        "en": "Pattom ward (approximate)",
+        "ml": "പട്ടം വാർഡ്"
+      },
+      "homes_total": 1256,
+      "homes_adopting": 314,
+      "kw": 617.9,
+      "units_year": 777144,
+      "litres_year": 68379470,
+      "co2_t_year": 564.98
+    }
+  ],
+  "total": {
+    "homes_total": 1756,
+    "homes_adopting": 439,
+    "kw": 867.9,
+    "units_year": 1083176,
+    "litres_year": 80160177,
+    "co2_t_year": 787.47
+  },
+  "sdg": {
+    "6": {
+      "goal": "Clean water and sanitation",
+      "litres_year": 80160177,
+      "homes_non_drinking_need_covered": 1098
+    },
+    "7": {
+      "goal": "Affordable and clean energy",
+      "kw_planned": 867.9,
+      "kwh_year": 1083176
+    },
+    "11": {
+      "goal": "Sustainable cities and communities",
+      "wards_with_a_plan": 2,
+      "homes_pledged": 439
+    },
+    "13": {
+      "goal": "Climate action",
+      "co2_t_year": 787.47
+    }
+  },
+  "kerala_ceiling": {
+    "solar_homes": 337000,
+    "units_moved_per_home_day": 2,
+    "kwh_moved_per_day": 674000,
+    "record_peak_mw": 6200,
+    "mw_if_4_hours": 168.5,
+    "mw_if_5_hours": 134.8,
+    "pct_of_record_4_hours": 2.7,
+    "pct_of_record_5_hours": 2.2,
+    "note": "Our estimate, not a measurement: the maths is homes x units moved out of the evening peak, spread over 4 hours (6-10 pm) or 5 hours (6-11 pm).",
+    "source": "3.37 lakh solar homes under PM Surya Ghar (idea doc S12); record peak about 6,195 MW on 23 Apr 2026 (news reports)"
+  },
+  "quality": {
+    "data": "cached",
+    "note": "Ward totals use the roofs we could map (or a configured household count) and a default household use; see each ward summary."
+  }
+}

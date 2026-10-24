@@ -1,0 +1,222 @@
+{
+  "schema": "roof-report@1",
+  "rules_checked_on": "2026-10-24",
+  "roof": {
+    "id": "drawn:cxe01t",
+    "area_m2": 1200,
+    "centroid": [
+      76.904484,
+      8.544284
+    ],
+    "roof_type": "flat",
+    "shade": "little",
+    "building_use": "public"
+  },
+  "home": {
+    "monthly_units": 18000,
+    "period_months": 1,
+    "phase": "3ph",
+    "units_source": "default"
+  },
+  "sun": {
+    "kw_max": 60,
+    "kw_recommended": 60,
+    "units_year": 88784,
+    "units_month": [
+      7830,
+      7901,
+      8921,
+      8173,
+      7304,
+      6564,
+      6897,
+      7375,
+      7466,
+      7166,
+      6307,
+      6880
+    ],
+    "subsidy": 0,
+    "cost": [
+      3300000,
+      4200000
+    ],
+    "net_cost": [
+      3300000,
+      4200000
+    ],
+    "payback_years": null,
+    "payback_years_no_subsidy": null,
+    "options": [],
+    "subsidy_days_left": null,
+    "subsidy_ends_on": null,
+    "co2_t_year": 64.55
+  },
+  "money": null,
+  "cliff": null,
+  "insights": [
+    {
+      "key": "insight.default_units",
+      "params": {
+        "monthly_units": 18000
+      }
+    },
+    {
+      "key": "insight.public_building",
+      "params": {}
+    },
+    {
+      "key": "insight.water_days",
+      "params": {
+        "days": 365,
+        "demand_litres_day": 1000,
+        "cover_pct": 89
+      }
+    }
+  ],
+  "rain": {
+    "annual_mm": 2344,
+    "harvest_litres_year": 1991622,
+    "monthly_litres": [
+      36821,
+      16970,
+      63236,
+      146409,
+      344142,
+      234131,
+      183172,
+      202388,
+      178593,
+      295313,
+      210394,
+      80053
+    ],
+    "tank_litres": 20000,
+    "water_cover_pct": 89,
+    "tank_curve": [
+      {
+        "litres": 500,
+        "cover_pct": 0
+      },
+      {
+        "litres": 1000,
+        "cover_pct": 55
+      },
+      {
+        "litres": 1500,
+        "cover_pct": 57
+      },
+      {
+        "litres": 2000,
+        "cover_pct": 66
+      },
+      {
+        "litres": 3000,
+        "cover_pct": 71
+      },
+      {
+        "litres": 5000,
+        "cover_pct": 77
+      },
+      {
+        "litres": 7500,
+        "cover_pct": 81
+      },
+      {
+        "litres": 10000,
+        "cover_pct": 83
+      },
+      {
+        "litres": 15000,
+        "cover_pct": 86
+      },
+      {
+        "litres": 20000,
+        "cover_pct": 89
+      }
+    ],
+    "well_recharge_litres_year": 1662822,
+    "demand_litres_day": 1000,
+    "safety": [
+      "safety.non_drinking_use",
+      "safety.treat_before_drinking",
+      "safety.mesh_on_tank"
+    ]
+  },
+  "score": {
+    "power": 41,
+    "water": 89,
+    "score": 65,
+    "band": "good",
+    "tip": null
+  },
+  "assumptions": [
+    {
+      "id": "sun_data",
+      "value": "cached",
+      "source": "NASA POWER monthly sun (cached, campus)",
+      "verified": false
+    },
+    {
+      "id": "rain_data",
+      "value": "cached",
+      "source": "Open-Meteo archive, 10 years of daily rain (2016-2025)",
+      "verified": false
+    },
+    {
+      "id": "performance_ratio",
+      "value": 0.75,
+      "source": "system efficiency, idea doc section 6",
+      "verified": false
+    },
+    {
+      "id": "usable_roof_share",
+      "value": 0.5,
+      "source": "share of the roof that can hold panels (flat)",
+      "verified": false
+    },
+    {
+      "id": "shade_factor",
+      "value": 1,
+      "source": "shade: little",
+      "verified": false
+    },
+    {
+      "id": "cost_per_kw",
+      "value": [
+        55000,
+        70000
+      ],
+      "source": "indicative, idea doc 6",
+      "verified": false
+    },
+    {
+      "id": "rain_runoff",
+      "value": 0.8,
+      "source": "share of roof rain reaching the tank; the first 1 mm of each rainy day is discarded",
+      "verified": false
+    },
+    {
+      "id": "water_demand_litres_day",
+      "value": 1000,
+      "source": "assumption: about 3 storeys, 5 kWh per m2 of floor per month",
+      "verified": false
+    },
+    {
+      "id": "co2_kg_per_kwh",
+      "value": 0.727,
+      "source": "CEA CO2 Baseline Database v20.0 (FY 2023-24): weighted average 0.727 tCO2/MWh, as reported by SolarQuarter and Climatiq",
+      "verified": false
+    },
+    {
+      "id": "default_units",
+      "value": 18000,
+      "source": "assumption: about 3 storeys, 5 kWh per m2 of floor per month",
+      "verified": false
+    }
+  ],
+  "quality": {
+    "data": "cached",
+    "units": "default"
+  }
+}

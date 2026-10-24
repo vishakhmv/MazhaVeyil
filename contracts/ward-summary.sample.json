@@ -1,0 +1,97 @@
+{
+  "schema": "ward-summary@1",
+  "ward_id": "pozhiyoor-w1",
+  "name": {
+    "en": "Pozhiyoor (approximate)",
+    "ml": "പൊഴിയൂർ"
+  },
+  "boundary_quality": "approximate",
+  "boundary": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          77.08720000000001,
+          8.2971
+        ],
+        [
+          77.0962,
+          8.2971
+        ],
+        [
+          77.0962,
+          8.3061
+        ],
+        [
+          77.08720000000001,
+          8.3061
+        ],
+        [
+          77.08720000000001,
+          8.2971
+        ]
+      ]
+    ]
+  },
+  "roofs": 500,
+  "roof_area_m2": 40000,
+  "potential": {
+    "kw": 1000,
+    "units_year": 1224128,
+    "litres_year": 47122829,
+    "co2_t_year": 889.94
+  },
+  "per_home_avg": {
+    "kw": 2,
+    "units_year": 2448,
+    "litres_year": 94246,
+    "co2_t_year": 1.78
+  },
+  "typical_roof": {
+    "area_m2": 80,
+    "score": 88,
+    "power": 100,
+    "water": 75,
+    "band": "strong",
+    "tank_litres": 5000
+  },
+  "scenarios": [
+    {
+      "adoption_pct": 10,
+      "homes": 50,
+      "kw": 100,
+      "units_year": 122413,
+      "litres_year": 4712283,
+      "co2_t_year": 88.99
+    },
+    {
+      "adoption_pct": 25,
+      "homes": 125,
+      "kw": 250,
+      "units_year": 306032,
+      "litres_year": 11780707,
+      "co2_t_year": 222.49
+    },
+    {
+      "adoption_pct": 50,
+      "homes": 250,
+      "kw": 500,
+      "units_year": 612064,
+      "litres_year": 23561415,
+      "co2_t_year": 444.97
+    },
+    {
+      "adoption_pct": 100,
+      "homes": 500,
+      "kw": 1000,
+      "units_year": 1224128,
+      "litres_year": 47122829,
+      "co2_t_year": 889.94
+    }
+  ],
+  "quality": {
+    "data": "cached",
+    "roofs_source": "config",
+    "note": "ASSUMPTION: 500-home ward (idea doc section 13 example). OSM maps only about 20 buildings here, so ward totals use this number. Replace with census or ward-office data."
+  }
+}

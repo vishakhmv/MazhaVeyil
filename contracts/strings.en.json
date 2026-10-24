@@ -1,0 +1,65 @@
+{
+  "band": {
+    "starting": "Starting",
+    "good": "Good",
+    "strong": "Strong"
+  },
+  "option": {
+    "smaller": "Smaller",
+    "recommended": "Recommended",
+    "larger": "Larger"
+  },
+  "appliance": {
+    "motor": "Water pump motor",
+    "washing_machine": "Washing machine",
+    "iron": "Iron",
+    "ev_charger": "EV charger"
+  },
+  "quality": {
+    "data": {
+      "cached": "Saved data for this area",
+      "live": "Live data",
+      "nearest-area": "Data from the nearest area",
+      "typical": "Typical Kerala data",
+      "forecast": "Forecast",
+      "forecast-stale": "Older forecast"
+    },
+    "units": {
+      "typed": "From your bill",
+      "default": "Estimated: type your units for an exact result"
+    }
+  },
+  "safety": {
+    "non_drinking_use": "Use roof rain for washing, gardening and toilets only.",
+    "treat_before_drinking": "Treat it before drinking.",
+    "mesh_on_tank": "Close the tank with a mesh so mosquitoes cannot breed."
+  },
+  "alert": {
+    "evening_peak": "Power demand is highest from {{from}} to {{to}}. Avoid heavy appliances then.",
+    "cloudy_day": "Tomorrow is cloudy: only {{sun_pct_of_typical}}% of a normal day's sun. Do the heavy jobs today.",
+    "heavy_rain": "About {{mm}} mm of rain expected tomorrow: your rain tank will fill."
+  },
+  "bill": {
+    "amount_differs": "The bill amount (Rs {{amount}}) differs from our calculation (Rs {{expected_total}}) by {{diff_pct}}%. Please check the units.",
+    "readings_mismatch": "The meter readings show {{from_readings}} units but the bill says {{units}}. Please check.",
+    "period_assumed": "We could not read the billing period, so we assumed {{months}} month.",
+    "period_unusual": "The billing period is {{days}} days, which is unusual. Please check.",
+    "units_very_high": "{{monthly_units}} units a month is very high. Please check.",
+    "units_unreadable": "We could not read the units. Please type them in.",
+    "amount_unreadable": "We could not read the bill amount."
+  },
+  "insight": {
+    "default_units": "You have not typed your bill units, so we assumed about {{monthly_units}} units a month. Type them for an exact result.",
+    "cliff_over": "You are {{units_over}} units above the {{cliff}}-unit cliff. Using that much less saves Rs {{saving}} a month.",
+    "cliff_near": "You are only {{units_to_go}} units below the {{cliff}}-unit cliff. One unit over it adds Rs {{jump}} to your bill.",
+    "last_panels_earn_little": "{{kw}} kW is the sweet spot: extra panels only remove your cheapest slab units, so each one takes over 10 years to pay back. Compare the larger option.",
+    "subsidy_window": "Under the current scheme period, about {{days_left}} days remain to get the Rs {{subsidy}} subsidy. Check the deadline.",
+    "roof_limits": "Your roof can make only {{power}}% of what you use (up to {{kw_max}} kW).",
+    "big_system_rules": "Systems as big as {{kw}} kW may fall under different KSERC 2025 rules. Confirm with KSEB before you apply.",
+    "public_building": "This is a public building: the PM Surya Ghar subsidy and the home tariff do not apply.",
+    "tank_tip": "A {{tank_litres}} L tank lifts your Water score to {{water}} and your Roof Score to {{score}}.",
+    "dry_months": "Your tank may run low in these months: {{months}}. (Month numbers 1 to 12: show them as names.)",
+    "water_days": "Your roof catches enough rain for about {{days}} days a year of washing, gardening and toilet water ({{demand_litres_day}} L a day), and the tank covers {{cover_pct}}% of days.",
+    "typical_data": "We used typical or nearby data for this place."
+  }
+}

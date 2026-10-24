@@ -1,0 +1,10 @@
+{
+  "units": 262,
+  "amount": 2013.0,
+  "billing_period_days": 60,
+  "months_in_bill": 2,
+  "consumer_no_masked": "XXXXXX4821",
+  "confidence": "high",
+  "warnings": [],
+  "from_cache": false
+}

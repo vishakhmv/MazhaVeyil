@@ -1,0 +1,183 @@
+{
+  "checked_on": "2026-10-24",
+  "verified_ids": ["kseb-lt1a-2025", "kseb-lt1a-2024-12", "electricity_duty", "tod_domestic"],
+  "notes": "Every number the engine uses lives in this file with a source. Change a rule here, nowhere else. Items with verify:true must not be shown to judges as facts.",
+  "tariffs": [
+    {
+      "id": "kseb-lt1a-2025",
+      "valid_from": "2025-04-01",
+      "valid_to": "2027-03-31",
+      "source": "KSEB LT-1A Domestic tariff table (idea doc section 7, S7). Check against KSEB's online bill calculator.",
+      "verified_on": "2026-10-24",
+      "verified_source": "kseb.in LT-1 Domestic tariff page, column 01.04.2025 to 31.03.2027: every energy and fixed-charge row matches, including 286/285 for 401-500 units (as published, not a typo)",
+      "telescopic_up_to_250": [
+        { "upto": 50, "rate": 3.35, "fixed_1ph": 50, "fixed_3ph": 130 },
+        { "upto": 100, "rate": 4.25, "fixed_1ph": 85, "fixed_3ph": 175 },
+        { "upto": 150, "rate": 5.35, "fixed_1ph": 105, "fixed_3ph": 205 },
+        { "upto": 200, "rate": 7.2, "fixed_1ph": 140, "fixed_3ph": 215 },
+        { "upto": 250, "rate": 8.5, "fixed_1ph": 160, "fixed_3ph": 235 }
+      ],
+      "flat_all_units_above_250": [
+        { "upto": 300, "rate": 6.75, "fixed_1ph": 220, "fixed_3ph": 240 },
+        { "upto": 350, "rate": 7.6, "fixed_1ph": 240, "fixed_3ph": 250 },
+        { "upto": 400, "rate": 7.95, "fixed_1ph": 260, "fixed_3ph": 260 },
+        { "upto": 500, "rate": 8.25, "fixed_1ph": 286, "fixed_3ph": 285 },
+        { "upto": 99999, "rate": 9.2, "fixed_1ph": 310, "fixed_3ph": 310 }
+      ]
+    },
+    {
+      "id": "kseb-lt1a-2024-12",
+      "valid_from": "2024-12-05",
+      "valid_to": "2025-03-31",
+      "source": "kseb.in LT-1 Domestic page, column 05.12.2024 to 31.03.2025",
+      "verified_on": "2026-10-24",
+      "verified_source": "kseb.in LT-1 Domestic tariff page, column 05.12.2024 to 31.03.2025",
+      "telescopic_up_to_250": [
+        { "upto": 50, "rate": 3.3, "fixed_1ph": 45, "fixed_3ph": 120 },
+        { "upto": 100, "rate": 4.15, "fixed_1ph": 75, "fixed_3ph": 160 },
+        { "upto": 150, "rate": 5.25, "fixed_1ph": 95, "fixed_3ph": 190 },
+        { "upto": 200, "rate": 7.1, "fixed_1ph": 130, "fixed_3ph": 200 },
+        { "upto": 250, "rate": 8.35, "fixed_1ph": 145, "fixed_3ph": 220 }
+      ],
+      "flat_all_units_above_250": [
+        { "upto": 300, "rate": 6.55, "fixed_1ph": 190, "fixed_3ph": 225 },
+        { "upto": 350, "rate": 7.4, "fixed_1ph": 215, "fixed_3ph": 235 },
+        { "upto": 400, "rate": 7.75, "fixed_1ph": 235, "fixed_3ph": 240 },
+        { "upto": 500, "rate": 8.05, "fixed_1ph": 265, "fixed_3ph": 265 },
+        { "upto": 99999, "rate": 9.0, "fixed_1ph": 290, "fixed_3ph": 290 }
+      ]
+    }
+  ],
+  "billing": {
+    "slab_basis": "per_month",
+    "verify": "Two-month bills: slabs are applied to units/2 per month, then scaled (idea doc 5.2). Confirm on KSEB's calculator."
+  },
+  "tod_domestic": {
+    "above_monthly_units": 500,
+    "windows": [
+      { "from": 6, "to": 18, "factor": 0.9 },
+      { "from": 18, "to": 22, "factor": 1.25 },
+      { "from": 22, "to": 6, "factor": 1.0 }
+    ],
+    "source": "kseb.in LT-1 Domestic page, ToD note: 90% of the ruling tariff 06-18 h, 125% 18-22 h, 100% 22-06 h; applies to homes whose average monthly use is above 500 units (ToD meter needed)",
+    "verified_on": "2026-10-24"
+  },
+  "bill_extras": {
+    "electricity_duty_pct_of_energy": 10,
+    "source": "kseb.in FAQ: Electricity Duty = 10% of Energy Charge",
+    "not_included": "meter rent and the fuel surcharge change from bill to bill and are not modelled"
+  },
+  "bill_check": {
+    "amount_tolerance": 0.2,
+    "max_units_per_month": 5000,
+    "source": "idea doc section 6: warn if the amount differs from our own tariff calculation by over 20%",
+    "verify": "Expected = energy + fixed charge + 10% duty. Meter rent and the fuel surcharge are not modelled, so real bills can run a little higher. Tune the tolerance on the 3 real bills."
+  },
+  "pm_surya_ghar": {
+    "per_kw_first_2kw": 30000,
+    "third_kw": 18000,
+    "cap": 78000,
+    "min_kw": 1,
+    "residential_only": true,
+    "scheme_until": "2027-03-31",
+    "source": "PM Surya Ghar Muft Bijli Yojana (S11)",
+    "verify": "Subsidy amounts (30,000 per kW to 2 kW, 18,000 for the third kW, cap 78,000) were confirmed on government pages (Delhi solar portal, Pune) on 2026-10-24. The 31 Mar 2027 end date is NOT confirmed and the official portal could not be read: check pmsuryaghar.gov.in for the deadline and any extension."
+  },
+  "net_metering": {
+    "surplus_rate_new": 2.79,
+    "max_kw_domestic": 20,
+    "confirmed_net_metering_kw": 3,
+    "cap_note": "KSERC Renewable Energy and Related Matters Regulations 2025 (notified, in force 2025-11-06): reports on the draft say net metering is for 1-3 kW (5 kW with 30% storage) and larger systems use net billing. The idea doc says 1-20 kW. For systems above 3 kW the savings here may be too high until the notified text is checked.",
+    "netting": "monthly_kwh_with_carry_forward",
+    "source": "KSERC net-metering rules in force from 2025-11-06 (S9, S10)",
+    "verify": "Notified regulations are in force from 2025-11-06 (billing changes from 2026-01-01), but the net-metering size limit (3 kW per draft reports vs 20 kW in the idea doc), the 2.79 surplus rate (draft reports: 75% of SECI FY25 bid for new systems) and the 1 rupee grid-support charge on exports were NOT confirmed against the notified text. Check the Kerala Gazette or serckerala.org."
+  },
+  "solar": {
+    "performance_ratio": 0.75,
+    "m2_per_kw": 10,
+    "usable_share": { "flat": 0.5, "sloped": 0.4 },
+    "shade_factor": { "little": 1.0, "some": 0.85, "a_lot": 0.65 },
+    "step_kw": 0.5,
+    "min_advice_kw": 1,
+    "max_advice_kw_home": 10,
+    "units_per_kw_month_rule": 110,
+    "panel_wp": 400,
+    "panel_note": "ASSUMPTION: 400 Wp panels, only used to turn kW into a panel count",
+    "cost_per_kw": { "low": 55000, "high": 70000, "source": "indicative, idea doc 6", "verify": "Replace with installer quotes." },
+    "sanity_units_per_kw_day": [3, 5]
+  },
+  "sizing": {
+    "marginal_payback_years": 10,
+    "life_years": 25,
+    "degradation": 0.005,
+    "source": "design choice: stop adding panels when the next 0.5 kW takes more than 10 years to pay back (after its extra subsidy). 25-year benefit assumes 0.5% output loss a year.",
+    "verify": "Check the 10-year rule and the 0.5% degradation with an installer."
+  },
+  "rain": {
+    "runoff": 0.8,
+    "first_flush_mm": 1,
+    "household": 4,
+    "non_drinking_lpcd": 50,
+    "tank_sizes_l": [500, 1000, 1500, 2000, 3000, 5000, 7500, 10000, 15000, 20000],
+    "marginal_gain_pp_per_day": 0.4,
+    "tank_rule": "smallest tank beyond which each extra day of stored demand adds under marginal_gain_pp_per_day points of reliability (the knee of the curve)",
+    "source": "Open-Meteo archive, 10 years of daily rain (2016-2025)"
+  },
+  "co2": {
+    "kg_per_kwh": 0.727,
+    "source": "CEA CO2 Baseline Database v20.0 (FY 2023-24): weighted average 0.727 tCO2/MWh, as reported by SolarQuarter and Climatiq",
+    "verify": "CEA has newer versions (v21 Nov 2025 for FY 2024-25, v22 Aug 2026 for FY 2025-26): open the User Guide on cea.nic.in and replace 0.727 with the latest weighted average."
+  },
+  "home_defaults": {
+    "monthly_units": 200,
+    "phase": "1ph",
+    "household": 4,
+    "source": "assumption",
+    "verify": "Replace with the survey median once Kishan has real answers."
+  },
+  "public_building": {
+    "default_kwh_per_roof_m2_month": 15,
+    "water_demand_litres_day": 1000,
+    "source": "assumption: about 3 storeys, 5 kWh per m2 of floor per month",
+    "verify": "Replace with the campus's real monthly units (ask the college office). PM Surya Ghar and the domestic tariff do not apply to public buildings."
+  },
+  "typical_kerala": {
+    "ghi_kwh_m2_day": [5.21, 5.86, 6.09, 5.81, 5.5, 5.09, 5.05, 5.38, 5.53, 4.95, 4.23, 4.42],
+    "rain_mm_month": [12, 18, 38, 120, 240, 650, 590, 350, 260, 290, 175, 55],
+    "source": "Sun: NASA POWER climatology at Pozhiyoor (8.30N, 77.09E). Rain: rough Kerala-wide monthly normals. Last-resort fallback only, when no cached or live data exists.",
+    "verify": "Fallback only. Flagged as quality.data = typical in every response."
+  },
+  "kerala": {
+    "solar_homes": 337000,
+    "units_moved_per_day": 2,
+    "peak_record_mw": 6200,
+    "source": "3.37 lakh solar homes under PM Surya Ghar (idea doc S12); record peak about 6,195 MW on 23 Apr 2026 (news reports)",
+    "verify": "The 3.37 lakh figure comes from the idea doc: confirm its source. The 2 units moved per home per day is our assumption."
+  },
+  "ward": {
+    "home_min_m2": 30,
+    "home_max_m2": 400,
+    "roof_type": "mixed",
+    "usable_share": 0.45,
+    "shade": "some",
+    "default_home_roof_m2": 80,
+    "source": "assumption: Kerala homes are a mix of flat concrete (0.50 usable) and sloped (0.40 usable) roofs",
+    "verify": "Replace with survey data on roof types and sizes."
+  },
+  "veyil": {
+    "base_profile_hourly": [3, 3, 3, 3, 3, 4, 6, 7, 8, 8, 8, 8, 8, 8, 8, 7, 7, 7, 8, 9, 9, 7, 5, 4],
+    "always_on_share": 0.3,
+    "profile_note": "ASSUMPTION: a typical Kerala home profile (30% always-on: fridge, fans, standby; the rest shaped by use through the day). Tuned so a typical home uses about a third of its own solar at home; KSEB reports 36% (S6).",
+    "profile_verify": "Replace with smart-meter or survey data if available.",
+    "peak": ["18:00", "22:00"],
+    "solar_window": ["08:00", "16:00"],
+    "optional_appliances": {
+      "ev_charger": { "kwh": 7, "minutes": 180, "usual_start": "21:00", "note": "ASSUMPTION: a slow home charger adding about 7 kWh (roughly 40 km); only useful if the car is home in the daytime. KSEB asked people to avoid EV charging at peak." }
+    },
+    "appliances": {
+      "motor": { "kwh": 0.75, "minutes": 60, "usual_start": "19:00" },
+      "washing_machine": { "kwh": 1.5, "minutes": 90, "usual_start": "20:00" },
+      "iron": { "kwh": 0.5, "minutes": 30, "usual_start": "19:30" }
+    }
+  }
+}

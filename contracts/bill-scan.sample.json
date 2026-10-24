@@ -1,0 +1,13 @@
+{
+  "units": 524,
+  "amount": 4210.0,
+  "bill_date": "2026-10-05",
+  "period_start": "2026-08-01",
+  "period_end": "2026-09-30",
+  "previous_reading": 10276,
+  "current_reading": 10800,
+  "phase": "1ph",
+  "consumer_number_masked": "****4821",
+  "export_units": 0,
+  "confidence": "high"
+}

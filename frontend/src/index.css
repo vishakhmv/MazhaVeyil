@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Self-hosted fonts (bundled by Vite): the app works with no internet. Malayalam falls back to Noto Sans Malayalam. */
+@import "@fontsource/plus-jakarta-sans/latin-400.css";
+@import "@fontsource/plus-jakarta-sans/latin-600.css";
+@import "@fontsource/plus-jakarta-sans/latin-700.css";
+@import "@fontsource/plus-jakarta-sans/latin-800.css";
+@import "@fontsource/noto-sans-malayalam/malayalam-400.css";
+@import "@fontsource/noto-sans-malayalam/malayalam-600.css";
+@import "@fontsource/noto-sans-malayalam/malayalam-700.css";
+@import "@fontsource/noto-sans-malayalam/malayalam-800.css";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', 'Noto Sans Malayalam', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Navy from the NEXATHON template, so slides and site look like one product */
+  --color-navy-50: #eef3fa;
+  --color-navy-100: #dce6f4;
+  --color-navy-200: #b9cce8;
+  --color-navy-300: #8da9d3;
+  --color-navy-400: #5f84bb;
+  --color-navy-500: #3f65a0;
+  --color-navy-600: #2f4f82;
+  --color-navy-700: #243e69;
+  --color-navy-800: #1a2e50;
+  --color-navy-900: #12213d;
+  --color-navy-950: #0b1630;
+
+  /* Veyil (sun) */
+  --color-sun-50: #fff8e6;
+  --color-sun-100: #ffefc2;
+  --color-sun-200: #ffdf85;
+  --color-sun-300: #ffcb47;
+  --color-sun-400: #f7b32b;
+  --color-sun-500: #e89a0c;
+  --color-sun-600: #c47a06;
+  --color-sun-700: #9a5c08;
+
+  /* Mazha (rain) */
+  --color-rain-50: #eaf6fd;
+  --color-rain-100: #d1ecfa;
+  --color-rain-200: #a6d8f4;
+  --color-rain-300: #6fbdea;
+  --color-rain-400: #3fa1db;
+  --color-rain-500: #2386c4;
+  --color-rain-600: #1a6ba2;
+  --color-rain-700: #175485;
+
+  /* Savings and good news */
+  --color-leaf-50: #e9f8f0;
+  --color-leaf-100: #cdefdd;
+  --color-leaf-400: #3dbe82;
+  --color-leaf-500: #23a26b;
+  --color-leaf-600: #1b8556;
+  --color-leaf-700: #17694a;
+
+  /* Warnings and cliffs */
+  --color-cliff-50: #fff1f0;
+  --color-cliff-100: #ffdedb;
+  --color-cliff-500: #e5484d;
+  --color-cliff-600: #c9353a;
+  --color-cliff-700: #a12a2e;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-sans);
+    background-color: #f6f8fc;
+    color: #0f1b33;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Malayalam glyphs are taller: give them room */
+  html[lang='ml'] body { line-height: 1.7; }
+  button, [role='button'] { cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--color-rain-400); outline-offset: 2px; border-radius: 6px; }
+  input[type='range'] { accent-color: var(--color-rain-600); }
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #eef2f8; }
+::-webkit-scrollbar-thumb { background: #c3cee0; border-radius: 4px; }
+
+/* Leaflet tweaks */
+.leaflet-container { font-family: var(--font-sans); background: #dbe7f3; }
+.mv-vertex { background: #fff; border: 3px solid var(--color-rain-600); border-radius: 50%; box-shadow: 0 1px 4px rgb(0 0 0 / 0.35); }
+
+@keyframes mv-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.mv-rise { animation: mv-rise 0.35s ease-out both; }
+@keyframes mv-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+.mv-pulse { animation: mv-pulse 1.6s ease-in-out infinite; }
+@keyframes mv-wave { from { transform: translateX(0); } to { transform: translateX(60px); } }
+.mv-wave { animation: mv-wave 2.6s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .mv-rise, .mv-pulse, .mv-wave { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Print: the Roof Report and the Grama Sabha page print on one clean A4 page */
+.print-only { display: none; }
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  .print-only { display: block; }
+  .print-card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; break-inside: avoid; }
+}

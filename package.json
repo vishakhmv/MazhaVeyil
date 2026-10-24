@@ -1,0 +1,23 @@
+{
+  "name": "mazhaveyil",
+  "private": true,
+  "type": "module",
+  "description": "MazhaVeyil: every roof gets a score, every ward gets a plan.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "engine": "npm --prefix engine start",
+    "test": "npm --prefix engine test",
+    "facts": "npm --prefix engine run facts",
+    "demo": "node scripts/demo.js",
+    "check": "node scripts/check-demo.js",
+    "community": "npm --prefix community start",
+    "seed": "node scripts/seed-community.js"
+  },
+  "devDependencies": {
+    "qrcode-terminal": "^0.12.0"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "ward-summary@1",
+  "ward_id": "campus-w1",
+  "name": {
+    "en": "Host campus (approximate)",
+    "ml": "ക്യാമ്പസ്"
+  },
+  "boundary_quality": "approximate",
+  "boundary": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          76.9013021,
+          8.5411488
+        ],
+        [
+          76.9073021,
+          8.5411488
+        ],
+        [
+          76.9073021,
+          8.5471488
+        ],
+        [
+          76.9013021,
+          8.5471488
+        ],
+        [
+          76.9013021,
+          8.5411488
+        ]
+      ]
+    ]
+  },
+  "roofs": 204,
+  "roof_area_m2": 25729,
+  "potential": {
+    "kw": 399.5,
+    "units_year": 502479,
+    "litres_year": 42702030,
+    "co2_t_year": 356.76
+  },
+  "per_home_avg": {
+    "kw": 1.96,
+    "units_year": 2463,
+    "litres_year": 209324,
+    "co2_t_year": 1.75
+  },
+  "quality": {
+    "data": "cached",
+    "roofs_source": "osm_count",
+    "note": null
+  }
+}

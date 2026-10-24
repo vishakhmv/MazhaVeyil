@@ -1,0 +1,21 @@
+{
+  "schema": "bill-check@1",
+  "status": "ok",
+  "bill": {
+    "units": 524,
+    "period_months": 2,
+    "period_source": "dates",
+    "monthly_units": 262,
+    "phase": "1ph"
+  },
+  "expected_total": 4330.7,
+  "expected_breakdown": {
+    "energy": 3537,
+    "fixed": 440,
+    "duty": 353.7
+  },
+  "amount": 4210,
+  "diff_pct": -2.8,
+  "tariff_id": "kseb-lt1a-2025",
+  "warnings": []
+}

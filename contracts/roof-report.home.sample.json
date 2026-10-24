@@ -1,0 +1,402 @@
+{
+  "schema": "roof-report@1",
+  "rules_checked_on": "2026-10-24",
+  "roof": {
+    "id": "drawn:1du6u59",
+    "area_m2": 120,
+    "centroid": [
+      77.091745,
+      8.301654
+    ],
+    "roof_type": "flat",
+    "shade": "some",
+    "building_use": "home"
+  },
+  "home": {
+    "monthly_units": 262,
+    "period_months": 1,
+    "phase": "1ph",
+    "units_source": "typed"
+  },
+  "sun": {
+    "kw_max": 6,
+    "kw_recommended": 2,
+    "units_year": 2448,
+    "units_month": [
+      206,
+      211,
+      241,
+      222,
+      217,
+      195,
+      200,
+      213,
+      212,
+      196,
+      162,
+      175
+    ],
+    "subsidy": 60000,
+    "cost": [
+      110000,
+      140000
+    ],
+    "net_cost": [
+      50000,
+      80000
+    ],
+    "payback_years": [
+      2.7,
+      4.3
+    ],
+    "payback_years_no_subsidy": [
+      5.9,
+      7.5
+    ],
+    "options": [
+      {
+        "label": "smaller",
+        "kw": 1,
+        "units_year": 1224,
+        "saving_year": 12573.33,
+        "surplus_units": 0,
+        "surplus_payout_year": 0,
+        "subsidy": 30000,
+        "cost": [
+          55000,
+          70000
+        ],
+        "net_cost": [
+          25000,
+          40000
+        ],
+        "payback_years": [
+          2,
+          3.2
+        ],
+        "payback_years_no_subsidy": [
+          4.4,
+          5.6
+        ],
+        "net_benefit_25y": 263677
+      },
+      {
+        "label": "recommended",
+        "kw": 2,
+        "units_year": 2448,
+        "saving_year": 18764.3,
+        "surplus_units": 0,
+        "surplus_payout_year": 0,
+        "subsidy": 60000,
+        "cost": [
+          110000,
+          140000
+        ],
+        "net_cost": [
+          50000,
+          80000
+        ],
+        "payback_years": [
+          2.7,
+          4.3
+        ],
+        "payback_years_no_subsidy": [
+          5.9,
+          7.5
+        ],
+        "net_benefit_25y": 377011
+      },
+      {
+        "label": "larger",
+        "kw": 3,
+        "units_year": 3672,
+        "saving_year": 21222,
+        "surplus_units": 528,
+        "surplus_payout_year": 1474.19,
+        "subsidy": 78000,
+        "cost": [
+          165000,
+          210000
+        ],
+        "net_cost": [
+          87000,
+          132000
+        ],
+        "payback_years": [
+          3.8,
+          5.8
+        ],
+        "payback_years_no_subsidy": [
+          7.3,
+          9.3
+        ],
+        "net_benefit_25y": 425130
+      }
+    ],
+    "subsidy_days_left": 158,
+    "subsidy_ends_on": "2027-03-31",
+    "co2_t_year": 1.78
+  },
+  "money": {
+    "bill_before_month": 1768.5,
+    "bill_after_month": 204.81,
+    "saving_month": 1563.69,
+    "saving_year": 18764.3,
+    "surplus_payout_year": 0,
+    "bill_before_months": [
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5,
+      1768.5
+    ],
+    "bill_after_months": [
+      194.09,
+      170.99,
+      70.85,
+      133.3,
+      149.53,
+      241.02,
+      219.54,
+      164.82,
+      169.56,
+      237.36,
+      380.55,
+      326.09
+    ]
+  },
+  "cliff": {
+    "last": {
+      "at": 250,
+      "over_by": 12,
+      "saving_if_under": 336
+    },
+    "next": {
+      "at": 300,
+      "units_to_go": 38,
+      "jump": 262.6
+    },
+    "solar_to_beat_cliff": {
+      "kw": 1,
+      "monthly_units_after": 152,
+      "saving_month": 1106.6
+    }
+  },
+  "insights": [
+    {
+      "key": "insight.cliff_over",
+      "params": {
+        "units_over": 12,
+        "cliff": 250,
+        "saving": 336
+      }
+    },
+    {
+      "key": "insight.last_panels_earn_little",
+      "params": {
+        "kw": 2,
+        "cover_kw": 2.5
+      }
+    },
+    {
+      "key": "insight.subsidy_window",
+      "params": {
+        "days_left": 158,
+        "subsidy": 60000
+      }
+    },
+    {
+      "key": "insight.tank_tip",
+      "params": {
+        "tank_litres": 7500,
+        "water": 84,
+        "score": 92
+      }
+    },
+    {
+      "key": "insight.dry_months",
+      "params": {
+        "months": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "key": "insight.water_days",
+      "params": {
+        "days": 365,
+        "demand_litres_day": 200,
+        "cover_pct": 80
+      }
+    }
+  ],
+  "rain": {
+    "annual_mm": 1720,
+    "harvest_litres_year": 141368,
+    "monthly_litres": [
+      2758,
+      913,
+      4389,
+      10245,
+      22176,
+      15181,
+      11599,
+      12709,
+      12333,
+      23831,
+      18173,
+      7063
+    ],
+    "tank_litres": 5000,
+    "water_cover_pct": 80,
+    "tank_curve": [
+      {
+        "litres": 500,
+        "cover_pct": 52
+      },
+      {
+        "litres": 1000,
+        "cover_pct": 63
+      },
+      {
+        "litres": 1500,
+        "cover_pct": 68
+      },
+      {
+        "litres": 2000,
+        "cover_pct": 71
+      },
+      {
+        "litres": 3000,
+        "cover_pct": 75
+      },
+      {
+        "litres": 5000,
+        "cover_pct": 80
+      },
+      {
+        "litres": 7500,
+        "cover_pct": 84
+      },
+      {
+        "litres": 10000,
+        "cover_pct": 88
+      },
+      {
+        "litres": 15000,
+        "cover_pct": 94
+      },
+      {
+        "litres": 20000,
+        "cover_pct": 96
+      }
+    ],
+    "well_recharge_litres_year": 81569,
+    "demand_litres_day": 200,
+    "safety": [
+      "safety.non_drinking_use",
+      "safety.treat_before_drinking",
+      "safety.mesh_on_tank"
+    ]
+  },
+  "score": {
+    "power": 100,
+    "water": 80,
+    "score": 90,
+    "band": "strong",
+    "tip": {
+      "tank_litres": 7500,
+      "water": 84,
+      "score": 92
+    }
+  },
+  "assumptions": [
+    {
+      "id": "sun_data",
+      "value": "cached",
+      "source": "NASA POWER monthly sun (cached, pozhiyoor)",
+      "verified": false
+    },
+    {
+      "id": "rain_data",
+      "value": "cached",
+      "source": "Open-Meteo archive, 10 years of daily rain (2016-2025)",
+      "verified": false
+    },
+    {
+      "id": "performance_ratio",
+      "value": 0.75,
+      "source": "system efficiency, idea doc section 6",
+      "verified": false
+    },
+    {
+      "id": "usable_roof_share",
+      "value": 0.5,
+      "source": "share of the roof that can hold panels (flat)",
+      "verified": false
+    },
+    {
+      "id": "shade_factor",
+      "value": 0.85,
+      "source": "shade: some",
+      "verified": false
+    },
+    {
+      "id": "cost_per_kw",
+      "value": [
+        55000,
+        70000
+      ],
+      "source": "indicative, idea doc 6",
+      "verified": false
+    },
+    {
+      "id": "rain_runoff",
+      "value": 0.8,
+      "source": "share of roof rain reaching the tank; the first 1 mm of each rainy day is discarded",
+      "verified": false
+    },
+    {
+      "id": "water_demand_litres_day",
+      "value": 200,
+      "source": "4 people x 50 L non-drinking use",
+      "verified": false
+    },
+    {
+      "id": "co2_kg_per_kwh",
+      "value": 0.727,
+      "source": "CEA CO2 Baseline Database v20.0 (FY 2023-24): weighted average 0.727 tCO2/MWh, as reported by SolarQuarter and Climatiq",
+      "verified": false
+    },
+    {
+      "id": "pm_surya_ghar",
+      "value": 60000,
+      "source": "PM Surya Ghar subsidy, homes only; window ends 2027-03-31",
+      "verified": false
+    },
+    {
+      "id": "surplus_rate",
+      "value": 2.79,
+      "source": "KSERC net metering: year-end surplus paid per unit",
+      "verified": false
+    },
+    {
+      "id": "savings_basis",
+      "value": "bill before - bill after",
+      "source": "energy charge only, month by month, with banked units",
+      "verified": false
+    }
+  ],
+  "quality": {
+    "data": "cached",
+    "units": "typed"
+  }
+}

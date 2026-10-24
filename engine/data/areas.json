@@ -1,0 +1,12 @@
+[
+  { "id": "campus", "name": { "en": "Host campus", "ml": "ക്യാമ്പസ്" }, "kind": "public",
+    "query": "College of Engineering Trivandrum, Sreekaryam", "half_deg": 0.003, "placeholder": true,
+    "note": "PLACEHOLDER: replace query (or add center + bbox) with the real host campus, then run npm run fetch" },
+  { "id": "pozhiyoor", "name": { "en": "Pozhiyoor", "ml": "പൊഴിയൂർ" }, "kind": "home",
+    "center": [77.0917, 8.3016], "half_deg": 0.0045,
+    "homes_in_ward": 500,
+    "homes_note": "ASSUMPTION: 500-home ward (idea doc section 13 example). OSM maps only about 20 buildings here, so ward totals use this number. Replace with census or ward-office data." },
+  { "id": "town", "name": { "en": "Pattom ward", "ml": "പട്ടം വാർഡ്" }, "kind": "home",
+    "query": "Pattom, Thiruvananthapuram", "half_deg": 0.0045, "placeholder": true,
+    "note": "PLACEHOLDER: a well-mapped city ward (about 1,400 OSM buildings per km2). Replace with your own town ward if you like." }
+]

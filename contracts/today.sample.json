@@ -1,0 +1,12 @@
+{
+  "schema": "today@1",
+  "date": "2026-10-24",
+  "kw": 2.5,
+  "area_m2": 120,
+  "rain_mm": 18.2,
+  "rain_litres_caught": 1651,
+  "units_made": 7,
+  "quality": {
+    "data": "forecast"
+  }
+}
